@@ -1,0 +1,146 @@
+\documentclass{article}
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{enumitem} % bullet points no left margin
+%\usepackage[none]{hyphenat} % don't hyphenate anything
+
+\usepackage{hyperref} % links
+
+% MARGINS
+\usepackage[
+	a4paper, % Paper size
+	top=1.5cm, % Top margin
+	bottom=1.5cm, % Bottom margin
+	left=1.5cm, % Left margin
+	right=1.5cm, % Right margin
+%	showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+% COLUMNS 
+\usepackage{paracol} % docs at http://tug.ctan.org/macros/latex/contrib/paracol/paracol-man.pdf
+\columnratio{0.55, 0.45}
+%\AtBeginEnvironment{paracol}{\setlength{\parindent}{0pt}} % Paracols have default paragraph indentation and this overrides it to the template default of no indentation
+\setlength\columnsep{0.07\textwidth} % Amount of horizontal space between the columns
+
+% FONTS
+\usepackage[scaled=0.8]{librebaskerville}
+\usepackage[scaled=0.8]{FiraSans}
+\renewcommand{\familydefault}{\sfdefault}
+% COLOURS
+\usepackage[dvipsnames]{xcolor}
+\definecolor{TitleGrey}{HTML}{656A6E}
+\definecolor{BodyGrey}{HTML}{3A4553}
+\definecolor{MyBlue}{HTML}{1E55B0}
+\definecolor{LightGrey}{HTML}{B6B6B6}
+% FONTAWESOME
+\usepackage{fontawesome}
+
+% MAKETITLE
+\renewcommand{\maketitle}{
+  {\noindent\rmfamily\Huge\bfseries\MakeUppercase\theauthor}
+  \vspace{.8em}
+  }
+
+% CONTACT DETAILS
+\newcommand{\contacts}[4]{
+  {\noindent\rmfamily\small\color{BodyGrey}\bfseries
+    {\color{LightGrey}\faPhone}\hspace{5pt}#1\hspace{12pt}
+    {\color{LightGrey}\faEnvelope}\hspace{5pt}#2\hspace{12pt}
+    {\color{LightGrey}\faLink}\hspace{5pt}#3\hspace{12pt}
+    {\color{LightGrey}\faGithub}\hspace{5pt}#4\hspace{12pt}
+  }
+}
+
+% SECTION TITLES 
+\usepackage{titlesec}
+\titleformat{\section}
+{\color{TitleGrey}\rmfamily\normalsize\bfseries\uppercase}{}{0em}{}
+[\titlerule]
+
+\titleformat{\subsection}
+{\color{black}\rmfamily\large\bfseries}{}{0em}{}
+
+\titleformat{\subsubsection}[runin]
+{\color{MyBlue}\rmfamily\bfseries}{}{0em}{}
+
+
+\begin{document}
+
+% TITLE
+  \title{CV}
+  \author{Kunhee Ha}
+
+  \maketitle
+
+\contacts
+  {07947513711}
+  {kunheeha@gmail.com}
+  {kunheeha.com}
+  {github.com/kunheeha}
+
+\color{BodyGrey}
+\begin{paracol}{2}
+  \raggedright
+
+
+  \section{Summary}
+  Developer with over a year of professional experience. Designed and implemented tools to automate legal processes and provided real-time engineering support to users in previous role. Currently pursuing a part-time Master's degree in Computer Science and AI at the University of York, constantly expanding my knowledge and eager to apply my skills to new challenges in software development.
+
+  \section{Experience}
+  \subsection{Junior Developer}
+  \subsubsection{Juno}
+  {\color{LightGrey}\scriptsize\href{https://www.juno.legal}{\faExternalLink}}
+  \hspace*{\fill}{\color{TitleGrey}{\scriptsize\faCalendar}\hspace{5pt}{\small10/2021 -- 12/2022}}
+  
+  {\noindent\small a legal technology company that automates legal processes involved in conveyancing.}
+  \begin{itemize}[leftmargin=*]
+  %\begin{itemize}
+    \item Worked directly with legal teams to design and build software to automate legal processes, resulting in efficiency gains and faster conveyancing at Juno by eight weeks compared to national average
+    \item Built out bespoke workflows to integrate three new mortgage lenders and partnerships into the platform
+    \item Designed and developed internal tools to support and automate both legal and operational work
+    \item Supported internal users, fielding bug reports and feature requests in real-time to ensure tools were clear and reliable, and issues were resolved quickly and effectively
+  \end{itemize}
+
+  \section{Education}
+  \subsection{MSc Computer Science and Artificial Intelligence}
+  \subsubsection{University of York}
+  \hspace*{\fill}{\small Ongoing}
+
+  \subsection{BSc Biochemistry (Hons.)}
+  \subsubsection{University of Birmingham}
+  \hspace*{\fill}{\small Graduated 2019}
+
+  \section{Additional Experience}
+  \subsection{Writer and Translator (Freelance)}
+  \subsubsection{Cana Catering Co.}
+  {\color{LightGrey}\scriptsize\href{http://cana-catering.com}{\faExternalLink}}
+  \hspace*{\fill}{\color{TitleGrey}{\scriptsize\faCalendar}\hspace{5pt}{\small09/2019 -- 11/2019}}
+
+  {\noindent\small a global company that provides catering and accommodation for overseas workers at construction sites.}
+  \begin{itemize}[leftmargin=*]
+    \item Wrote the technical proposal for their joint project with Daewoo Group, Chiyoda Corp., and Technip S.A.
+    \item Produced project documents translated from Korean to English
+  \end{itemize}
+
+  \switchcolumn
+
+  \section{Skills}
+  \subsection{Languages}
+  Python, JavaScript, Java, SQL, Bash
+  \subsubsection{Markup}
+  HTML, {\LaTeX}, Markdown
+  \subsection{Frameworks}
+  \subsubsection{Backend}
+  Flask, Django
+  \subsubsection{Frontend}
+  React
+  \subsection{Version Control}
+  Git
+  \subsection{Databases}
+  PostgreSQL
+
+  \section{Personal Projects}
+
+\end{paracol}
+\end{document}
