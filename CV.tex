@@ -102,7 +102,7 @@
 \usepackage{soul}       % Underline config
 \usepackage{setspace}   % Spacing
 \setul{1.2ex}{0.2ex}
-\newcommand{\skill}[2][LightGrey]{\setulcolor{#1}\ul{~~~#2~~~}}
+\newcommand{\skill}[2][LightGrey]{\color{black}\setulcolor{#1}\ul{~~~#2~~~}\hspace{5pt}}
 
 
 % -------------------------------------------------------------------------------------------------------------- 
@@ -191,20 +191,29 @@
   % Skills
   % ------------------------------------------------------- 
   \section{Skills}
+  \titleformat{\subsection}
+  {\color{MyBlue}\rmfamily\bfseries}{}{0em}{}
+
   \subsection{Languages}
-      \skill{Python}
-  Python, JavaScript, Java, SQL, Bash
-  \subsubsection{Markup}
-  HTML, {\LaTeX}, Markdown
+    \skill{Python}
+    \skill{Java}
+    \skill{Javascript}
+    \skill{Bash}
+    \vspace{10pt}
+
+    \skill{SQL}
+  \subsection{Markup/Stylesheet}
+    \skill{HTML}
+    \skill{CSS}
+    \skill{{\rmfamily\LaTeX}}
+    \skill{Markdown}
   \subsection{Frameworks}
-  \subsubsection{Backend}
-  Flask, Django
-  \subsubsection{Frontend}
-  React
+    \skill{Flask}
+    \skill{Django}
   \subsection{Version Control}
-  Git
+    \skill{Git}
   \subsection{Databases}
-  PostgreSQL
+    \skill{PostgreSQL}
 
   % ------------------------------------------------------- 
   % Personal projects
