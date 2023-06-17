@@ -241,6 +241,41 @@
   % Personal projects
   % ------------------------------------------------------- 
   \section{Personal Projects}
+  \titleformat{\subsection}
+  {\color{black}\rmfamily\large}{}{0em}{}
+
+  \color{BodyGrey}
+  \subsection{Personal Website}
+  \href{https://www.kunheeha.com}{\underline{\smash{www.kunheeha.com}}\hspace{5pt}{\color{LightGrey}\scriptsize\faExternalLink}}
+  \begin{itemize}[leftmargin=*]
+    \setlength\itemsep{-2pt}
+    \item Flask, PostgreSQL, vanilla Javascript, Bootstrap
+    \item Deployed on an AWS EC2 Debian server with NGINX
+  \end{itemize}
+
+  \subsection{Online Workspace}
+  \href{https://www.onlineworkspace.com}{\underline{\smash{www.onlineworkspace.com}}\hspace{5pt}{\color{LightGrey}\scriptsize\faExternalLink}}
+  \begin{itemize}[leftmargin=*]
+    \setlength\itemsep{-2pt}
+    \item Django, PostgreSQL, vanilla Javascript, Bootstrap
+    \item Deployed on the same Debian machine and NGINX server running my personal website by creating a separate server block
+  \end{itemize}
+
+  \subsection{Tmux-Vim Unified Navigation}
+  \href{https://github.com/kunheeha/tvun}{\underline{\smash{Github repo}}\hspace{5pt}{\color{LightGrey}\scriptsize\faExternalLink}}
+  \begin{itemize}[leftmargin=*]
+    \setlength\itemsep{-2pt}
+    \item Bash, Vimscript
+  \end{itemize}
+  
+  \subsection{Open Source Contributions}
+  \begin{itemize}[leftmargin=*]
+    \setlength\itemsep{-2pt}
+    \item \href{https://github.com/7aman/wdpass/pull/4/commits/b75d8a1d53fa9a7f92a6f2738d14137f30b30fc2}{\underline{\smash{wdpass}}\hspace{5pt}{\color{LightGrey}\scriptsize\faExternalLink}} - a tool that allows unlocking and management of Western Digital Passport HDDs on Linux
+      \begin{itemize}
+        \item noticed error whilst running on personal linux desktop, spotted cause was due to a dependency module being renamed, forked and tested locally, opened PR from which a commit was merged into master branch
+      \end{itemize}
+  \end{itemize}
 
 \end{paracol}
 \end{document}
