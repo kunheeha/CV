@@ -1,24 +1,105 @@
 \documentclass{article}
+% ------------------------------------------------------- 
+% MARGINS
+% ------------------------------------------------------- 
 \usepackage[
 	a4paper,        % Paper size
 	top=5cm,      % Top margin
 	bottom=2cm,   % Bottom margin
-	left=2cm,     % Left margin
-	right=2cm,    % Right margin
+	left=1cm,     % Left margin
+	right=1.5cm,    % Right margin
 %	showframe       % Uncomment to show frames around the margins for debugging
 ]{geometry}
 
+% ------------------------------------------------------- 
+% FONTS
+% ------------------------------------------------------- 
+\usepackage[scaled=0.8]{librebaskerville}
 \usepackage{FiraSans}
 \renewcommand{\familydefault}{\sfdefault}
 \renewcommand{\baselinestretch}{1.5} 
 
+% ------------------------------------------------------- 
+% COLOURS
+% ------------------------------------------------------- 
 \usepackage[dvipsnames]{xcolor}
+\definecolor{TitleGrey}{HTML}{656A6E}
 \definecolor{BodyGrey}{HTML}{3A4553}
+\definecolor{LightGrey}{HTML}{B6B6B6}
+
+% ------------------------------------------------------- 
+% COLUMNS 
+% ------------------------------------------------------- 
+\usepackage{paracol}                  % Multicolumn
+\columnratio{0.2, 0.8}                % Column ratio
+\setlength\columnsep{0.06\textwidth}  % Amount of horizontal space between the columns
+
+% FONTAWESOME
+\usepackage{fontawesome}
 
 \usepackage[none]{hyphenat}
 
+% ------------------------------------------------------- 
+% MAKETITLE
+% ------------------------------------------------------- 
+\usepackage{titling}
+\renewcommand{\maketitle}{
+  {\noindent\rmfamily\huge\bfseries\MakeUppercase\theauthor}
+
+  {\color{black}\rmfamily\normalsize\bfseries{Backend Engineer}}
+}
+
+% ------------------------------------------------------- 
+% CONTACT DETAILS
+% ------------------------------------------------------- 
+\newcommand{\contacts}[3]{
+  {
+    {\noindent\rmfamily\small\color{BodyGrey}\bfseries{\color{LightGrey}\faPhone}\hspace{3pt}#1}
+
+    {\noindent\rmfamily\small\color{BodyGrey}\bfseries{\color{LightGrey}\faEnvelope}\hspace{3pt}#2}
+
+    {\noindent\rmfamily\small\color{BodyGrey}\bfseries{\color{LightGrey}\faLink}\hspace{3pt}#3}
+
+  }
+}
+
+% ------------------------------------------------------- 
+% SECTION TITLES 
+% ------------------------------------------------------- 
+\usepackage{titlesec}
+\titleformat{\section}
+{\color{TitleGrey}\rmfamily\small\bfseries\uppercase}{}{0em}{}
+[\titlerule]
+
+% -------------------------------------------------------------------------------------------------------------- 
+% DOCUMENT
+% --------------------------------------------------------------------------------------------------------------
 \begin{document}
 \pagenumbering{gobble}
+  \title{CV}
+  \author{Kunhee Ha}
+% ------------------------------------------------------- 
+% LEFT COLUMN
+% ------------------------------------------------------- 
+\begin{paracol}{2}
+  \raggedright
+  \maketitle
+
+% ------------------------------------------------------- 
+% CONTACT DETAILS
+% ------------------------------------------------------- 
+\section{Contact}
+
+\contacts
+  {07947513711}
+  {kunheeha@gmail.com}
+  {kunheeha.com}
+
+% ------------------------------------------------------- 
+% RIGHT COLUMN
+% ------------------------------------------------------- 
+  \switchcolumn
+  \vspace{3pt}
 \color{BodyGrey}
 Dear Hiring Manager,
 \vspace{15pt}
@@ -42,4 +123,5 @@ Thank you for considering my application. I am confident that my multidisciplina
 Sincerely,
 
 Kunhee Ha
+\end{paracol}
 \end{document}
