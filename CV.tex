@@ -132,16 +132,16 @@
 
 \color{BodyGrey}
 % ------------------------------------------------------- 
+% Summary
+% ------------------------------------------------------- 
+\section{Summary}
+Highly motivated developer with close to two years of experience, specialising in backend development. Recently engineered a robust gRPC backend from inception, adeptly managing and encrypting sensitive financial data. Additionally, worked on design and implementation of automation tools streamlining legal processes within conveyancing in previous role. Demonstrates a strong dedication to continuous improvement, pursuing postgraduate modules in Computer Science and AI at the University of York alongside full-time employment. Eager to leverage acquired expertise and skill to tackle diverse challenges in software development.
+% ------------------------------------------------------- 
 % LEFT COLUMN
 % ------------------------------------------------------- 
 \begin{paracol}{2}
   \raggedright
   \vspace{3pt}
-  % ------------------------------------------------------- 
-  % Summary
-  % ------------------------------------------------------- 
-  \section{Summary}
-  Highly motivated developer with close to two years of experience, specialising in backend development. Recently engineered a robust gRPC backend from inception, adeptly managing and encrypting sensitive financial data. Additionally, worked on design and implementation of automation tools streamlining legal processes within conveyancing in previous role. Demonstrates a strong dedication to continuous improvement, pursuing postgraduate modules in Computer Science and AI at the University of York alongside full-time employment. Eager to leverage acquired expertise and skill to tackle diverse challenges in software development.
   % ------------------------------------------------------- 
   % Experience
   % ------------------------------------------------------- 
@@ -154,10 +154,11 @@
   {\noindent\small a fintech company that provides a digitised ROSCA as a service.}
   \begin{itemize}[leftmargin=*]
     \setlength\itemsep{-2pt}
-    \item Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
-    \item Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
-    \item Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
-    \item Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+    \item Developed a robust gRPC backend in Go to seamlessly pull and encrypt customers' open banking data, ensuring security and privacy
+    \item Designed and implemented database schemas using GORM (ORM library for Go) for efficient storage and retrieval of customers' financial data
+    \item Implemented encryption protocols using public-key cryptography for sensitive transactions data, with key rotations for enhanced security
+    \item Collaborated with the data team to integrate the backend with a model for in-house credit/trust score calculation
+    \item Utilised CockroachDB (PostgreSQL compatible) for efficient storage and retrieval of hydrated data objects, optimising performance and scalability
   \end{itemize}
 
   \subsection{Junior Developer}
@@ -168,10 +169,9 @@
   {\noindent\small a legal technology company that automates legal processes involved in conveyancing.}
   \begin{itemize}[leftmargin=*]
     \setlength\itemsep{-2pt}
-    \item Collaborated with legal teams to design and develop software solutions, automating legal processes and reducing conveyancing time by eight weeks compared to the national average
+    \item Collaborated with legal teams to design, develop and implement automation solutions on the in-house app built on Python backend, reducing conveyancing time by eight weeks compared to national average
+    \item Developed internal tool in Python, utilising SQLAlchemy and OCR for parsing legal documents, designed and implemented the database schema and data hydration processes to store extracted information in a PostgreSQL database, facilitating subsequent analysis and retrieval
     \item Successfully integrated bespoke workflows for two new company clients and a mortgage lender, helping establish key partnerships and expanding the platform's capabilities
-    \item Innovated internal tools to streamline legal and operational workflows, improving efficiency and reducing errors
-    \item Provided real-time engineering support to internal users, ensuring prompt resolution of issues and enhancing the reliability of tools
   \end{itemize}
 
   % ------------------------------------------------------- 
@@ -196,22 +196,6 @@
     \item Conducted multiple laboratory projects in which novel data was collected and interpreted with R
   \end{itemize}
 
-  % ------------------------------------------------------- 
-  % Additional experience
-  % ------------------------------------------------------- 
-  %\section{Additional Experience}
-  %\subsection{Writer and Translator (Freelance)}
-  %\subsubsection{Cana Catering Co.}
-  %{\color{LightGrey}\scriptsize\href{http://cana-catering.com}{\faExternalLink}}
-  %\hspace*{\fill}{\color{TitleGrey}{\scriptsize\faCalendar}\hspace{5pt}{\small09/2019 -- 11/2019}}
-
-  %{\noindent\small a global company that provides catering and accommodation for overseas workers at construction sites.}
-  %\begin{itemize}[leftmargin=*]
-  %  \setlength\itemsep{-2pt}
-  %  \item Authored the technical proposal for a joint project with Daewoo Group, Chiyoda Corp., and Technip S.A., showcasing strong communication and writing skills
-  %  \item Translated project documents from Korean to English, ensuring accurate and effective communication across diverse teams
-  %\end{itemize}
-
 % ------------------------------------------------------- 
 % RIGHT COLUMN
 % ------------------------------------------------------- 
@@ -231,9 +215,14 @@
     \skill{Java}
     \skill{Javascript}
     \skill{Bash}
-    \vspace{3pt}
+  \subsection{Database Management}
+    \skill{SQLAlchemy}
+    \skill{Alembic}
+    \skill{GORM}
+    \vspace{10pt}
 
-    \skill{SQL}
+    \skill{PostgesSQL}
+    \skill{SQLite}
   \subsection{DevOps/Deployment}
     \skill{Docker}
     \skill{Kubernetes}
@@ -243,38 +232,38 @@
 
     \skill{Apache}
     \skill{Gunicorn}
+  \subsection{Frameworks}
+    \skill{Flask}
+    \skill{Django}
   \subsection{Markup/Stylesheet}
     \skill{HTML}
     \skill{CSS}
     \skill{{\rmfamily\LaTeX}}
     \skill{Markdown}
-  \subsection{Frameworks}
-    \skill{Flask}
-    \skill{Django}
-  \subsection{Version Control}
-    \skill{Git}
+  %\subsection{Version Control}
+  %  \skill{Git}
 
   \vspace{15pt}
   % ------------------------------------------------------- 
   % Additional experience
   % ------------------------------------------------------- 
-  \section{Additional Experience}
-  \titleformat{\subsection}
-  {\color{black}\rmfamily\large\bfseries}{}{0em}{}
-  \subsection{Writer and Translator (Freelance)}
-  \titleformat{\subsubsection}[runin]
-  {\color{MyBlue}\rmfamily\bfseries}{}{0em}{}
-  \subsubsection{Cana Catering Co.}
-  {\color{LightGrey}\scriptsize\href{http://cana-catering.com}{\faExternalLink}}
-  \hspace*{\fill}{\color{TitleGrey}{\scriptsize\faCalendar}\hspace{5pt}{\small09/2019 -- 11/2019}}
-  \color{BodyGrey}
+  %\section{Additional Experience}
+  %\titleformat{\subsection}
+  %{\color{black}\rmfamily\large\bfseries}{}{0em}{}
+  %\subsection{Writer and Translator (Freelance)}
+  %\titleformat{\subsubsection}[runin]
+  %{\color{MyBlue}\rmfamily\bfseries}{}{0em}{}
+  %\subsubsection{Cana Catering Co.}
+  %{\color{LightGrey}\scriptsize\href{http://cana-catering.com}{\faExternalLink}}
+  %\hspace*{\fill}{\color{TitleGrey}{\scriptsize\faCalendar}\hspace{5pt}{\small09/2019 -- 11/2019}}
+  %\color{BodyGrey}
 
-  {\noindent\small a global company that provides catering and accommodation for overseas workers at construction sites.}
-  \begin{itemize}[leftmargin=*]
-    \setlength\itemsep{-2pt}
-    \item Authored the technical proposal for a joint project with Daewoo Group, Chiyoda Corp., and Technip S.A., showcasing strong communication and writing skills
-    \item Translated project documents from Korean to English, ensuring accurate and effective communication across diverse teams
-  \end{itemize}
+  %{\noindent\small a global company that provides catering and accommodation for overseas workers at construction sites.}
+  %\begin{itemize}[leftmargin=*]
+  %  \setlength\itemsep{-2pt}
+  %  \item Authored the technical proposal for a joint project with Daewoo Group, Chiyoda Corp., and Technip S.A., showcasing strong communication and writing skills
+  %  \item Translated project documents from Korean to English, ensuring accurate and effective communication across diverse teams
+  %\end{itemize}
   % ------------------------------------------------------- 
   % Personal projects
   % ------------------------------------------------------- 
@@ -291,13 +280,13 @@
     \item Deployed on an AWS EC2 Debian server with NGINX and Gunicorn
   \end{itemize}
 
-  %\subsection{Online Workspace}
-  %\href{https://www.onlineworkspace.com}{\underline{\smash{www.onlineworkspace.com}}\hspace{5pt}{\color{LightGrey}\scriptsize\faExternalLink}}
-  %\begin{itemize}[leftmargin=*]
-  %  \setlength\itemsep{-2pt}
-  %  \item Created a collaborative workspace using Django, PostgreSQL, vanilla Javascript, and Bootstrap
-  %  \item Deployed alongside the personal website, utilizing a separate server block in NGINX configuration
-  %\end{itemize}
+  \subsection{Online Workspace}
+  \href{https://www.onlineworkspace.com}{\underline{\smash{www.onlineworkspace.com}}\hspace{5pt}{\color{LightGrey}\scriptsize\faExternalLink}}
+  \begin{itemize}[leftmargin=*]
+    \setlength\itemsep{-2pt}
+    \item Created a collaborative workspace using Django, PostgreSQL, vanilla Javascript, and Bootstrap
+    \item Deployed alongside the personal website, utilizing a separate server block in NGINX configuration
+  \end{itemize}
 
   %\subsection{Local Password Manager}
   %\href{https://github.com/kunheeha/pythonpassmanager}{\underline{\smash{Github repo}}\hspace{5pt}{\color{LightGrey}\scriptsize\faExternalLink}}
