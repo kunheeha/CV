@@ -34,8 +34,8 @@
 % COLUMNS 
 % ------------------------------------------------------- 
 \usepackage{paracol}                  % Multicolumn
-\columnratio{0.6, 0.4}                % Column ratio
-\setlength\columnsep{0.06\textwidth}  % Amount of horizontal space between the columns
+\columnratio{0.5, 0.5}                % Column ratio
+\setlength\columnsep{0.16\textwidth}  % Amount of horizontal space between the columns
 
 
 % ------------------------------------------------------- 
@@ -193,8 +193,6 @@ Backend Engineer with over 2.5 years of experience, currently working in fintech
     \item Conducted multiple laboratory projects in which novel data was collected and interpreted with R.
   \end{itemize}
 
-  \vspace{3pt}
-
   % ------------------------------------------------------- 
   % Skills
   % ------------------------------------------------------- 
@@ -202,13 +200,19 @@ Backend Engineer with over 2.5 years of experience, currently working in fintech
   \titleformat{\subsection}
   {\color{MyBlue}\rmfamily\bfseries}{}{0em}{}
 
+  \begin{paracol}{2}
+  % ------------------------------------------------------- 
+  % Skills - left column
+  % ------------------------------------------------------- 
   \subsection{Languages}
+    \vspace{5pt}
     \skill{Go}
     \skill{Python}
     \skill{Java}
     \skill{Javascript}
     \skill{Bash}
   \subsection{Database and Cache Management}
+    \vspace{5pt}
     \skill{SQLAlchemy}
     \skill{Alembic}
     \skill{GORM}
@@ -218,6 +222,7 @@ Backend Engineer with over 2.5 years of experience, currently working in fintech
     \skill{PostgesSQL}
     \skill{SQLite}
   \subsection{DevOps/Deployment}
+    \vspace{5pt}
     \skill{Docker}
     \skill{Kubernetes}
     \skill{AWS EC2}
@@ -226,16 +231,22 @@ Backend Engineer with over 2.5 years of experience, currently working in fintech
 
     \skill{Apache}
     \skill{Gunicorn}
+  \switchcolumn
+  % ------------------------------------------------------- 
+  % Skills - left column
+  % ------------------------------------------------------- 
   \subsection{Frameworks}
+    \vspace{5pt}
     \skill{Flask}
     \skill{Django}
   \subsection{Markup/Stylesheet}
+    \vspace{5pt}
     \skill{HTML}
     \skill{CSS}
     \skill{{\rmfamily\LaTeX}}
     \skill{Markdown}
   %\subsection{Version Control}
   %  \skill{Git}
+  \end{paracol}
 
-  \vspace{15pt}
 \end{document}
