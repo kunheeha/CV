@@ -34,8 +34,8 @@
 % COLUMNS 
 % ------------------------------------------------------- 
 \usepackage{paracol}                  % Multicolumn
-\columnratio{0.6, 0.4}                % Column ratio
-\setlength\columnsep{0.06\textwidth}  % Amount of horizontal space between the columns
+\columnratio{0.5, 0.5}                % Column ratio
+\setlength\columnsep{0.16\textwidth}  % Amount of horizontal space between the columns
 
 
 % ------------------------------------------------------- 
@@ -77,7 +77,6 @@
     {\color{LightGrey}\faEnvelope}\hspace{5pt}#2\hspace{12pt}   % Email
     {\color{LightGrey}\faLink}\hspace{5pt}#3\hspace{12pt}       % Website
     {\color{LightGrey}\faGithub}\hspace{5pt}#4\hspace{12pt}     % Github
-    {\color{LightGrey}\faGithub}\hspace{5pt}#5                  % Github Work
   }
 }
 
@@ -92,6 +91,7 @@
 
 \titleformat{\subsection}
 {\color{black}\rmfamily\large\bfseries}{}{0em}{}
+\titlespacing{\subsection}{0pt}{1em}{0.2em}
 
 \titleformat{\subsubsection}[runin]
 {\color{MyBlue}\rmfamily\bfseries}{}{0em}{}
@@ -128,117 +128,73 @@
   {kunheeha@gmail.com}
   {kunheeha.com}
   {github.com/kunheeha}
-  {github.com/kunheeha-bloom}
 
 \color{BodyGrey}
 % ------------------------------------------------------- 
-% LEFT COLUMN
+% Summary
 % ------------------------------------------------------- 
-\begin{paracol}{2}
-  % ------------------------------------------------------- 
-  % Summary
-  % ------------------------------------------------------- 
-  \section{Summary}
-  Backend Engineer currently working in fintech, specialising in building microservices for open banking integrations in Go. Recently spearheaded the end-to-end design and deployment of an open banking data integration project, while ensuring system reliability and adhering to regulatory compliance. Previously worked on automation of legal processes in conveyancing. Committed to continuous learning, as demonstrated by pursuing postgraduate modules in Computer Science and AI alongside full-time employment, applying insights from its undertaking to real-world challenges.
+\section{Summary}
+Backend Engineer currently working at Spotify within data infrastructure. Prior experience consists of builing open banking integrations in the field of fintech, and automation of legal processes in the conveyancing domain. Committed to continuous learning, as demonstrated by pursuing postgraduate modules in Computer Science and AI alongside full-time emloyment, applying insights from its undertaking to real-world challenges.
   \raggedright
   \vspace{3pt}
   % ------------------------------------------------------- 
   % Experience
   % ------------------------------------------------------- 
   \section{Experience}
+  % ------------------------------------------------------- 
+  % Spotify
+  % ------------------------------------------------------- 
+  \subsection{Backend Engineer I}
+  \subsubsection{Spotify}
+  {\color{LightGrey}\scriptsize\href{https://www.spotify.com/uk/about-us/contact/}{\faExternalLink}}
+  {\color{TitleGrey}{\small an audio streaming and media service provider.}}
+  \hspace*{\fill}{\color{TitleGrey}{\scriptsize\faCalendar}\hspace{5pt}{\small06/2025 -- Present}}
+
+  \begin{itemize}[leftmargin=*]
+    \setlength\itemsep{-2pt}
+    \item Lorem ipsum dolor sit amec, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    \item Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    \item Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    \item Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  \end{itemize}
+
+  % ------------------------------------------------------- 
+  % Bloom
+  % ------------------------------------------------------- 
   \subsection{Backend Engineer}
   \subsubsection{Bloom}
   {\color{LightGrey}\scriptsize\href{https://www.bloommoney.co}{\faExternalLink}}
-  \hspace*{\fill}{\color{TitleGrey}{\scriptsize\faCalendar}\hspace{5pt}{\small09/2023 -- Present}}
-  
-  {\noindent\small a fintech company that provides a digitised ROSCA as a service.}
+  {\color{TitleGrey}{\small a fintech company that provides a digitised ROSCA as a service.}}
+  \hspace*{\fill}{\color{TitleGrey}{\scriptsize\faCalendar}\hspace{5pt}{\small09/2023 -- 06/2025}}
+
   \begin{itemize}[leftmargin=*]
     \setlength\itemsep{-2pt}
     \item Spearheaded the design, development, and deployment of an open banking data integration project, ensuring high system reliability and full regulatory compliance.
     \item Implemented robust encryption mechanisms for storing customers' open banking data, including a dedicated service to manage key rotations for enhanced security.
     \item Built a customer address lookup service to migrate away from a third-party provider, improving performance.
-    \item Collaborated with the front-end developer to ensure a seamless customer authentication flow, enabling users to connect their bank accounts securely to the open banking service.
   \end{itemize}
 
+  % ------------------------------------------------------- 
+  % Juno
+  % ------------------------------------------------------- 
   \subsection{Junior Developer}
   \subsubsection{Juno}
   {\color{LightGrey}\scriptsize\href{https://www.juno.legal}{\faExternalLink}}
+  {\color{TitleGrey}{\small a law firm that uses an in-house proprietary case management system to automate aspects of conveyancing.}}
   \hspace*{\fill}{\color{TitleGrey}{\scriptsize\faCalendar}\hspace{5pt}{\small10/2021 -- 12/2022}}
   
-  {\noindent\small a law firm that uses an in-house proprietary case management system to automate aspects of conveyancing.}
   \begin{itemize}[leftmargin=*]
     \setlength\itemsep{-2pt}
     \item Developed and implemented automation solutions to repetitive legal processes in the domain of conveyancing, increasing operational efficiency and mitigating human errors, reducing conveyancing time by eight weeks compared to national average. {\color{LightGrey}\scriptsize\href{https://www.juno.legal/information/how-long-does-conveyancing-take/}{\faExternalLink}}
     \item Built internal tool to parse and analyse legal documents, specifically requisition letters from HM Land Registry, designed and implemented the database schema and data hydration process to store extracted data.
     \item Successfully integrated bespoke workflows for two new company clients and a mortgage lender, helping establish key partnerships and expanding the platform's capabilities.
-    \item Collaborated with the legal team to understand domain-specific requirements and deliver tailored solutions.
   \end{itemize}
-
-% ------------------------------------------------------- 
-% RIGHT COLUMN
-% ------------------------------------------------------- 
-  \switchcolumn
-  \vspace{3pt}
-
-  % ------------------------------------------------------- 
-  % Skills
-  % ------------------------------------------------------- 
-  \section{Skills}
-  \titleformat{\subsection}
-  {\color{MyBlue}\rmfamily\bfseries}{}{0em}{}
-
-  \subsection{Languages}
-    \skill{Go}
-    \skill{Python}
-    \skill{Java}
-    \skill{Javascript}
-    \skill{Bash}
-    \vspace{1pt}
-
-    \skill{SQL}
-  \subsection{Databases/Cache}
-    \skill{CockroachDB}
-    \skill{PostgreSQL}
-    \skill{Redis}
-    \vspace{10pt}
-
-    \skill{SQLite}
-  \subsection{DevOps/Deployment}
-    \skill{Docker}
-    \skill{Kubernetes}
-    \vspace{10pt}
-
-    \skill{AWS (EC2, ECR, ECS, EKS)}
-    \skill{NGINX}
-    \skill{Gunicorn}
-  \subsection{Frameworks/Libraries}
-    \skill{GORM}
-    \skill{Flask}
-    \skill{Django}
-    \skill{Alembic}
-    \vspace{10pt}
-
-    \skill{SQLAlchemy}
-  \subsection{Markup/Stylesheet}
-    \skill{{\rmfamily\LaTeX}}
-    \skill{Markdown}
-    \skill{HTML}
-    \skill{CSS}
-  %\subsection{Version Control}
-  %  \skill{Git}
-
-  \vspace{15pt}
 
   % ------------------------------------------------------- 
   % Education
   % ------------------------------------------------------- 
   \section{Education}
-  % Reset body colour
-  \color{BodyGrey}
-  % Reset subsection titleformat
-  \titleformat{\subsection}
-  {\color{black}\rmfamily\large\bfseries}{}{0em}{}
-  \subsection{PGCert Computer Science and AI}
+  \subsection{PGCert Computer Science and Artificial Intelligence}
   \subsubsection{University of York}
   \hspace*{\fill}{\small Awarded 2023}
   \begin{itemize}[leftmargin=*]
@@ -255,6 +211,47 @@
     \item Developed expertise in data interpretation using R, enabling effective statistical analysis and data visualisation.
     \item Conducted multiple laboratory projects in which novel data was collected and interpreted with R.
   \end{itemize}
+  % ------------------------------------------------------- 
+  % Skills
+  % ------------------------------------------------------- 
+  \section{Skills}
+  \titleformat{\subsection}[runin]
+  {\color{MyBlue}\rmfamily\bfseries}{}{0em}{}
 
-\end{paracol}
+  \subsection{Languages}
+    \hspace*{\fill}
+    \skill{Go}
+    \skill{Python}
+    \skill{Java}
+    \skill{Javascript}
+    \skill{Bash}
+    \skill{SQL}
+  \subsection{Databases/Cache}
+    \hspace*{\fill}
+    \skill{CockroachDB}
+    \skill{PostgreSQL}
+    \skill{Redis}
+    \skill{SQLite}
+  \subsection{DevOps/Deployment}
+    \hspace*{\fill}
+    \skill{Docker}
+    \skill{Kubernetes}
+    \skill{AWS (EC2, ECR, ECS, EKS)}
+    \skill{NGINX}
+    \skill{Gunicorn}
+  \subsection{Frameworks/Libraries}
+    \hspace*{\fill}
+    \skill{GORM}
+    \skill{Flask}
+    \skill{Django}
+    \skill{Alembic}
+    \skill{SQLAlchemy}
+  \subsection{Markup/Stylesheet}
+    \hspace*{\fill}
+    \skill{{\rmfamily\LaTeX}}
+    \skill{Markdown}
+    \skill{HTML}
+    \skill{CSS}
+  %\subsection{Version Control}
+  %  \skill{Git}
 \end{document}
